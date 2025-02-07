@@ -69,11 +69,12 @@ export function About() {
               </a>
 
               <a
-                href="#"
-                className=" flex items-center justify-center w-fit gap-2 px-4 py-2 rounded-md"
+                  href="https://www.google.com/maps/place"
+                  target="_blank"
+                  className="flex items-center justify-center w-fit gap-2 px-4 py-2 rounded-md"
               >
-                <MapPin className="w-5 h-5 text-black" />
-                Endereço da loja
+                  <MapPin className="w-5 h-5 text-black" />
+                  Endereço da loja
               </a>
             </div>
 

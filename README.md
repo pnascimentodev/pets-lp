@@ -1,5 +1,9 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Pets for Dev 
+I hope this helps you set up your project on GitHub and deploy it on Netlify. If you need anything else, I'm here to help! 🚀
 
+Connect with me on [Linkedin](linkedin.com/in/devpnascimento/).
+
+You can see my project online [here](https://petsdev.netlify.app/).
 ## Getting Started
 
 First, run the development server:
@@ -20,6 +24,14 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Technologies Used
+
+- [React](https://reactjs.org)
+- [Tailwind CSS](https://tailwindcss.com)
+- [AOS (Animate On Scroll)](https://michalsnik.github.io/aos/)
+- [Phosphor Icons](https://phosphoricons.com)
+- [Lucide React](https://lucide.dev)
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
@@ -29,8 +41,43 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Deploy on Netlify
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+To deploy your Next.js app on [Netlify](https://www.netlify.com), follow these steps:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Connect your GitHub repository to Netlify.
+2. Configure the build settings:
+   - Build command: `npm run build`
+   - Publish directory: `out`
+3. Deploy your site.
+
+For more details, check out the [Netlify documentation](https://docs.netlify.com/).
+
+## Example Repository
+
+Here is an example of a basic project structure you can use in your GitHub repository:
+
+```
+my-nextjs-project/
+│
+├── public/
+│   └── favicon.ico
+│
+├── src/
+│   ├── pages/
+│   │   └── index.tsx
+│   ├── styles/
+│   │   └── globals.css
+│   └── app/
+|       ├── components/
+│       │    └── ExampleComponent.tsx
+│       └── page.tsx
+│
+├── .gitignore
+├── package.json
+├── README.md
+├── tsconfig.json
+└── next.config.js
+```
+
+Project inspired by the course of [Sujeito Programador](https://sujeitoprogramador.com/).
