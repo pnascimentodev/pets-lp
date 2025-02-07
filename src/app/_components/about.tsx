@@ -1,6 +1,6 @@
 import Image from "next/image";
-import about1Img from '../../../public/about-1.png'
-import about2Img from '../../../public/about-2.png'
+import about1Img from '../../../public/dogz (1).png'
+import about2Img from '../../../public/cat1.png'
 import { Check, MapPin } from "lucide-react";
 import { WhatsappLogo } from "@phosphor-icons/react/dist/ssr";
 
@@ -27,7 +27,7 @@ export function About() {
             <div className="absolute w-40 h-40 right-4 -bottom-8 border-4 overflow-hidden rounded-lg border-white">
               <Image
                 src={about2Img}
-                alt="Foto do cachorro 2"
+                alt="Foto do gatinho"
                 fill
                 quality={100}
                 priority
@@ -62,7 +62,7 @@ export function About() {
               <a
                 target='_blank'
                 href="#"
-                className="bg-[#E84C3D] text-white flex items-center justify-center w-fit gap-2 px-4 py-2 rounded-md"
+                className="bg-[#E84C3D] text-white flex items-center justify-center w-fit gap-2 px-4 py-2 rounded-md hover:bg-green-500"
               >
                 <WhatsappLogo className="w-5 h-5 text-white" />
                 Contato via WhatsApp

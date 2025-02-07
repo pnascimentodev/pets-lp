@@ -1,23 +1,10 @@
 import { WhatsappLogo } from "@phosphor-icons/react/dist/ssr";
 import dogImg from "../../../public/hero-dog.png";
-import catImg from "../../../public/cat-dog-hero.png";
 import Image from "next/image";
 
 export function Header() {
     return (
         <section className="bg-[#E84C3D] text-white relative overflow-hidden">
-    
-          <div>
-            <Image
-              src={dogImg}
-              alt='Foto do cachorro'
-              fill
-              sizes='100vw'
-              priority
-              className='object-cover opacity-60 lg:hidden'
-            />
-            <div className='absolute inset-0 bg-black opacity-40 md:hidden'></div>
-          </div>
     
           <div className="container mx-auto pt-16 pb-16 md:pb-0 px-4 relative">
     
@@ -37,10 +24,10 @@ export function Header() {
     
                 <a
                   data-aos="fade-up"
-                  data-aos-delay="500"
+                  data-aos-delay="400"
                   target='_blank'
                   href="#"
-                  className="bg-green-500 px-5 py-2 rounded-md font-semibold flex items-center justify-center w-fit gap-2"
+                  className="bg-green-500 px-5 py-2 rounded-md font-semibold flex items-center justify-center w-fit gap-2 hover:scale-110"
                 >
                   <WhatsappLogo className='w-5 h-5' />
                   Contato via WhatsApp
@@ -54,17 +41,18 @@ export function Header() {
     
               </div>
     
-              <div className="hidden md:block h-full relative overflow-hidden">
-  <Image
-    src={dogImg}
-    alt="Foto do dog"
-    className="object-contain scale-125 translate-y-[-0%]"
-    fill
-    sizes="(max-width: 768px) 0vw, 50vw"
-    quality={100}
-    priority
-  />
-</div>
+              <div className="hidden md:block h-full relative overflow-hidden" data-aos="fade-down-left">
+                <Image
+                  src={dogImg}
+                  alt="Foto do dog"
+                  className="object-contain scale-125 translate-y-[-0%]"
+                  
+                  fill
+                  sizes="(max-width: 768px) 0vw, 50vw"
+                  quality={100}
+                  priority
+                />
+              </div>
 
     
             </article>
