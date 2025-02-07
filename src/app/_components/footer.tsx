@@ -4,6 +4,7 @@ import royal from '../../../public/royal.png'
 import primier from '../../../public/primier.png'
 import whiskas from '../../../public/whiskas.png'
 import natural from '../../../public/natural.png'
+import friskies from '../../../public/friskies.png'
 import Image from 'next/image'
 import { FacebookLogo, InstagramLogo, YoutubeLogo } from '@phosphor-icons/react/dist/ssr'
 
@@ -13,7 +14,7 @@ const brands = [
   { name: "Primier", logo: primier },
   { name: "Formula Natural", logo: natural },
   { name: "Whiskas", logo: whiskas },
-  { name: "Golden", logo: golden },
+  { name: "Friskies", logo: friskies },
 ]
 
 export function Footer() {
@@ -26,7 +27,7 @@ export function Footer() {
 
           <div className="grid grid-cols-2 lg:grid-cols-6 gap-8">
             {brands.map((item, index) => (
-              <div key={index} className='bg-white p-4 rounded-lg flex items-center justify-center'>
+              <div key={index} className='bg-white p-4 rounded-lg flex items-center justify-center hover:scale-110'>
                 <Image
                   src={item.logo}
                   alt={item.name}
@@ -60,11 +61,10 @@ export function Footer() {
 
           <div>
             <h3 className='text-2xl font-semibold mb-2'>Contatos</h3>
-            <p>Email: teste@teste.com</p>
-            <p>Telefone: (XX) 1231831238</p>
+            <p>Email: seu-email@mail.com</p>
+            <p>Telefone: (99) 1231831238</p>
             <p>Rua X, centro, Campo Grande | MS</p>
           </div>
-
 
           <div>
             <h3 className='text-2xl font-semibold mb-2'>Redes sociais</h3>
